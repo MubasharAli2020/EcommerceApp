@@ -1,0 +1,54 @@
+.footer {
+    background: #2a2e32;
+    
+  
+  }
+  
+  .footer .text-small {
+    font-size: 0.9rem;
+  }
+  
+  .footer a {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+  
+  .footer a:hover, a:focus {
+    text-decoration: none;
+  }
+  
+  .footer .form-control {
+    background: #212529;
+    border-color: #545454;
+  }
+  
+  .footer .form-control:focus {
+    background: #212529;
+  }
+  
+  .footer  footer {
+    background: #212529;
+  }
+  
+  
+  /* ==========================================
+      CUSTOM UTILS CLASSES
+    ========================================== */
+    .footer  body, .footer html {
+      height: 100%;
+    }
+    @media(max-width:720px){
+      .footer .part {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .part{
+        margin:14px 0px;
+      }
+      p{
+        text-align: center;
+      }
+    }

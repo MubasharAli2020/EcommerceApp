@@ -1,0 +1,163 @@
+  
+
+
+
+
+
+
+
+
+  
+  ------------------------------------------------------------------------------------------------
+  
+  
+  
+  
+  Header .css 
+
+  .header{
+    background-color: #131921;
+    display:flex;
+    align-items: center;
+   
+}
+nav {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0; /* required */
+    z-index:100;
+  }
+.header__logo{
+    width:100px;
+    margin:0px 20px;
+    margin-top:18px;
+    cursor:pointer;
+}
+
+.header__optionBasket{
+display:flex;
+align-items: center;         
+}
+.header__basketCount{
+    margin:0 10px;
+}
+.header__search{
+    display:flex;
+    flex:1;
+}
+.header__nav{
+    display:flex;
+    justify-content: space-evenly;
+}
+.header__options{
+    display:flex;
+    flex-direction: column;
+    margin:0px 10px;
+}
+.header__optionLineOne{
+    font-size:10px;
+}
+.header__optionLineTwo{
+    font-size:13px;
+    font-weight: 800;
+}
+.header__link{
+    color:#fff;
+    text-decoration: none;
+}
+.header__input{
+    height:12px;
+    padding:10px;
+    width:100%;
+    border:none;
+}
+.header__searchIcon{
+    background-color: #cd9042;
+    height:22px !important;
+    padding:5px;
+}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  -----------------------------------------------------------------------------------------------
+  
+   Header ---------------
+   
+   
+   <nav>
+            {/* logo => img on the left */}
+         
+            <div className="header">
+                 <Link to="/">
+                <img className="header__logo"  
+                 src="http://pngimg.com/uploads/amazon/amazon_PNG11.png" 
+                alt=""/>
+                </Link>
+            
+            <div className="header__search">
+        
+            {/* search bar */}
+
+            {/* <input className="header__input" type="text" /> */}
+           
+            {/* <SearchIcon className="header__searchIcon" /> */}
+
+             </div>
+
+              {/* 3 Icons */}
+              <div className="header__nav">
+
+                  <Link to="/login" className="header__link">
+                        <div className="header__options">
+                           <span className="header__optionLineOne">Hello Qazi</span>
+                           <span className="header__optionLineTwo">SignIn</span>
+                        </div>
+                  </Link>
+                     
+                      <Link to="/" className="header__link">
+
+                        <div className="header__options">
+                           <span className="header__optionLineOne">Returns</span>
+                           <span className="header__optionLineTwo">&orders</span>
+                        </div>
+
+                  </Link>
+                          
+                      <Link to="/" className="header__link">
+                        <div className="header__options">
+                           <span className="header__optionLineOne">Your</span>
+                           <span className="header__optionLineTwo">Prime</span>
+                        </div>
+
+                  </Link>
+
+                  <Link to="/checkout" className="header__link">
+                    
+                    <div className="header__optionBasket">
+                   
+                    {/* SearchIcon */}
+                    <ShoppingBasketIcon  />
+                      
+                      {/* count basket */}
+                      <span className="header__optionLineTwo  header__basketCount">{initialState.basket?.length}</span>
+                      </div>
+                    </Link>
+              </div>
+            {/* 1 basket => cart */}
+
+            </div>
+        </nav>

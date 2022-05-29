@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.navbar{
+  font-family: 'Roboto', sans-serif;
+    padding: 0px;
+    background-color: white!important;
+    color: black!important;
+
+}
+.navbar .navbar-brand img{
+  height: 80px;
+  width: 80px;
+}
+.navbar .navbar-nav .nav-item .nav-link, .navbar-brand{
+font-size: 20px;
+font-weight: 600;
+color: aliceblue;
+}
+.navbar .navbar-brand img{
+ font-size: 400px!important;
+}
+.navbar .navbar-nav .nav-item .nav-link{
+  color: black!important;
+}
+/* .navbar .navbar-toggler-icon{
+ background-color: aliceblue;
+ padding: 20px;
+ border-radius: 5px;
+ outline-color: #212529;
+}
+  */
